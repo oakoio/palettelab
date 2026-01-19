@@ -6,7 +6,7 @@ from huggingface_hub import hf_hub_download
 
 from utils.checkpoint_utils import load_model_for_inference
 from utils.color_utils import rgb_to_hex, normalized_lab_to_rgb
-from utils.setup_utils import hf_repo_id, hf_model_filename
+from utils.link_utils import github_repo_id, hf_repo_id, hf_model_filename
 
 
 def parse_args():
@@ -65,7 +65,9 @@ def main(args):
         return html
 
     with gr.Blocks() as demo:
-        gr.Markdown("<h1>PaletteLab</h1>\n<h4>Generate palettes with text</h4>")
+        gr.Markdown(
+            f"<h1>PaletteLab</h1><br><h4>Generate palettes with text</h4><br>[<a href='https://github.com/{github_repo_id}'>💻Repository</a>]&nbsp;&nbsp;[<a href='https://huggingface.co/spaces/{github_repo_id}'>🕹️Demo</a>]&nbsp;&nbsp;[<a href='https://huggingface.co/{hf_repo_id}'>📦Model</a>]"
+        )
 
         input = gr.Textbox(label="Input text", placeholder="Describe the palette")
 

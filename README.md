@@ -1,5 +1,5 @@
 # PaletteLab
-
+[`💻Repository`](https://github.com/oakoat/palettelab)&nbsp;&nbsp;[`🕹️Demo`](https://huggingface.co/spaces/oakoat/palettelab)&nbsp;&nbsp;[`📦Model`](https://huggingface.co/oakoat/palettelab)<br><br>
 PaletteLab is a project that explores AI-driven color palette generation. It is designed to support multimodal inputs, including text, images, and palettes. At present, only text-to-palette generation is supported.
 
 ## Examples
