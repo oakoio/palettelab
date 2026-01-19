@@ -49,8 +49,14 @@ You can also use PaletteLab locally via a notebook or Gradio web interface. Down
 
 #### Gradio
 
-- Run the command `python -m gradio_app.app`.
-- If you manually download the model weights, supply the path using `python -m gradio_inference.app --model [model.path]`.
+- Run the following command:
+```bash
+python -m gradio_app.app
+```
+- If you manually download the model weights, run the command with `--model` argument:
+```bash
+python -m gradio_inference.app --model [model.path]
+```
 
 ## Pipeline
 
