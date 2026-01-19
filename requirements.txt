@@ -1,0 +1,11 @@
+gradio==6.3.0
+matplotlib==3.8.2
+numpy==1.26.4
+omegaconf==2.3.0
+scikit-image==0.22.0
+scikit-learn==1.4.2
+scipy==1.11.4
+torch==2.7.0
+torchvision==0.22.0
+tqdm==4.66.2
+transformers==4.57.3

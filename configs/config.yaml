@@ -1,0 +1,36 @@
+model:
+  clip_model_name: openai/clip-vit-base-patch16
+  tokenizer_input_length: 77
+  d_text_proj: 512
+  d_model: 512
+  d_z: 128
+  n_layers: 6
+  n_heads: 8
+  dim_ff: 2048
+  max_seq_len: 128
+  teacher_forcing_noise: 0.02
+
+train:
+  num_epochs: 20
+  batch_size: 32
+  test_split: 0.2
+  gradient_clip_norm: 1.0
+
+loss:
+  lambda_mse: 1.0
+  lambda_hungarian: 0.5
+
+optimizer:
+  lr: 2.0e-5
+  weight_decay: 0.03
+
+scheduler:
+  warmup_linear:
+    warmup_iters: 5000
+    start_factor: 0.1
+    end_factor: 1
+
+  cosine:
+    T_0: 10000
+    T_mult: 2
+    eta_min: 5.0e-6
