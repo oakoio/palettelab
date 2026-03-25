@@ -45,7 +45,7 @@ def main(args):
                 text, palette_size=int(palette_size), deterministic=deterministic
             )
 
-        lab = generated_palette[0].cpu().numpy()
+        lab = generated_palette[0].float().cpu().numpy()
         hex_palette = [
             rgb_to_hex(normalized_lab_to_rgb(lab_color)) for lab_color in lab
         ]

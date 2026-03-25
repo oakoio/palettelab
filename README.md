@@ -1,11 +1,12 @@
 # PaletteLab
-[`💻Repository`](https://github.com/oakoat/palettelab)&nbsp;&nbsp;[`🕹️Demo`](https://huggingface.co/spaces/oakoat/palettelab)&nbsp;&nbsp;[`📦Model`](https://huggingface.co/oakoat/palettelab)<br><br>
+[`💻Repository`](https://github.com/oakoio/palettelab)&nbsp;&nbsp;[`🕹️Demo`](https://huggingface.co/spaces/oako/palettelab)&nbsp;&nbsp;[`📦Model`](https://huggingface.co/oako/palettelab)<br><br>
 PaletteLab is a project that explores AI-driven color palette generation. It is designed to support multimodal inputs, including text, images, and palettes. At present, only text-to-palette generation is supported.
 
 ## Examples
 
-![Palette generation on 15 test prompts](examples/palette_generation_test_prompts_15.png)
-See results for all test prompts [here](examples/palette_generation_test_prompts.png).
+![Palette generation results](examples/palette_generation_test_prompts_15.png)
+
+[More samples](examples/palette_generation_test_prompts.png)
 
 ## Installation
 
@@ -19,7 +20,7 @@ See results for all test prompts [here](examples/palette_generation_test_prompts
 1. Clone the repository and enter the directory
 
 ```bash
-git clone https://github.com/oakoat/palettelab
+git clone https://github.com/oakoio/palettelab
 cd palettelab
 ```
 
@@ -37,8 +38,8 @@ pip install -r requirements.txt
 
 ## Usage
 
-Check out our [HuggingFace space](https://huggingface.co/spaces/oakoat/palettelab).<br>
-You can also use PaletteLab locally via a notebook or Gradio web interface. Download the [model weights from Hugging Face](https://huggingface.co/oakoat/palettelab) or allow the scripts to download automatically (default behavior).
+Visit the demo (link on top).<br>
+You can also use it locally through a notebook or a Gradio web interface. Download the model weights (link on top) or let the script download automatically by default.
 
 #### Notebook
 
