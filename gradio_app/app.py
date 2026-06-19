@@ -66,7 +66,7 @@ def main(args):
 
     with gr.Blocks() as demo:
         gr.Markdown(
-            f"<h1>PaletteLab</h1><br><h4>Generate palettes with text</h4><br>[<a href='https://github.com/{github_repo_id}'>💻Repository</a>]&nbsp;&nbsp;[<a href='https://huggingface.co/spaces/{github_repo_id}'>🕹️Demo</a>]&nbsp;&nbsp;[<a href='https://huggingface.co/{hf_repo_id}'>📦Model</a>]"
+            f"<h1>PaletteLab</h1><br><h4>Generate palettes with text</h4><br>[<a href='https://github.com/{github_repo_id}'>💻Repository</a>]&nbsp;&nbsp;[<a href='https://huggingface.co/spaces/{hf_repo_id}'>🕹️Demo</a>]&nbsp;&nbsp;[<a href='https://huggingface.co/{hf_repo_id}'>📦Model</a>]"
         )
 
         input = gr.Textbox(label="Input text", placeholder="Describe the palette")
@@ -77,11 +77,11 @@ def main(args):
         with gr.Row():
             gr.Examples(
                 examples=[
-                    ["sheep on grassland"],
-                    ["peaceful sunset"],
-                    ["autumn glow"],
-                    ["blueberry milkshake"],
-                    ["love and hate"],
+                    ["arctic"],
+                    ["autumn"],
+                    ["matcha "],
+                    ["love"],
+                    ["rainbow"],
                 ],
                 inputs=[input],
             )

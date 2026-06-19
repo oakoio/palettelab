@@ -1,60 +1,61 @@
 # PaletteLab
-[`💻Repository`](https://github.com/oakoio/palettelab)&nbsp;&nbsp;[`🕹️Demo`](https://huggingface.co/spaces/oako/palettelab)&nbsp;&nbsp;[`📦Model`](https://huggingface.co/oako/palettelab)<br><br>
-PaletteLab is a project that explores AI-driven color palette generation. It is designed to support multimodal inputs, including text, images, and palettes. At present, only text-to-palette generation is supported.
+[`💻Repository`](https://github.com/oakto/palettelab)&nbsp;&nbsp;[`🕹️Demo`](https://huggingface.co/spaces/oako/palettelab)&nbsp;&nbsp;[`📦Model`](https://huggingface.co/oako/palettelab)<br><br>
+PaletteLab is a color palette generation tool. It is designed to support multimodal inputs, including text, images, and palettes. Currently, only text-to-palette generation is supported.
 
 ## Examples
 
 ![Palette generation results](examples/palette_generation_test_prompts_15.png)
 
-[More samples](examples/palette_generation_test_prompts.png)
+[More examples](examples/palette_generation_test_prompts.png)
 
 ## Installation
 
-### Prerequisites
-
-- Python 3.10 or higher
-- PyTorch 2.7 or higher
-
 ### Setup
 
-1. Clone the repository and enter the directory
+1. Clone the repository and navigate to the project directory:
 
 ```bash
-git clone https://github.com/oakoio/palettelab
+git clone https://github.com/oakto/palettelab
 cd palettelab
 ```
 
-2. If you have an NVIDIA GPU, install a CUDA-enabled PyTorch build. CPU-only users can skip this step.
-
-```bash
-pip install torch==2.7.0 torchvision==0.22.0 --index-url https://download.pytorch.org/whl/cu126
-```
-
-3. Install other dependencies
+2. Install dependencies:
 
 ```bash
 pip install -r requirements.txt
 ```
 
+3. Install PyTorch:
+
+For CUDA:
+```bash
+pip3 install torch torchvision --index-url https://download.pytorch.org/whl/cu128
+```
+For CPU only:
+```bash
+pip3 install torch torchvision --index-url https://download.pytorch.org/whl/cpu
+```
+
+For other versions, see the [official installation guide](https://pytorch.org/get-started/locally).
+
 ## Usage
 
-Visit the demo (link on top).<br>
-You can also use it locally through a notebook or a Gradio web interface. Download the model weights (link on top) or let the script download automatically by default.
+You can run locally on a notebook or a Gradio web interface. Download the model weights using the link above, or allow the script to download them automatically by default.
 
 #### Notebook
 
 1. Open [`run.ipynb`](inference/run.ipynb).
-2. Locate the cell that defines `use_local` and configure variables as needed.
-3. Locate the cell that defines `text_prompt` and configure variables as needed.
+2. Locate the cell that defines `use_local` and configure the variables as needed.
+3. Locate the cell that defines `text_prompt` and configure the variables as needed.
 4. Run the notebook.
 
 #### Gradio
 
-- Run the following command:
+- Run the following command.
 ```bash
 python -m gradio_app.app
 ```
-- If you manually download the model weights, run the command with `--model` argument:
+- If you manually downloaded the model weights, run the command with `--model` argument.
 ```bash
 python -m gradio_inference.app --model [model.path]
 ```

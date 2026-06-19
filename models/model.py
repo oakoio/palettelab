@@ -168,7 +168,7 @@ class PaletteModel(nn.Module):
         text,
         palette_size,
         deterministic=False,
-        stochastic_output_noise_std=0.05,
+        stochastic_output_noise_std=0.03,
     ):
         assert (
             palette_size <= self.max_seq_len
