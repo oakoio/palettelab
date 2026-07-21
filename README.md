@@ -1,5 +1,7 @@
 # PaletteLab
-[`💻Repository`](https://github.com/oakto/palettelab)&nbsp;&nbsp;[`🕹️Demo`](https://huggingface.co/spaces/oako/palettelab)&nbsp;&nbsp;[`📦Model`](https://huggingface.co/oako/palettelab)<br><br>
+[![View on GitHub](https://img.shields.io/badge/View%20on%20GitHub-343432?logo=github&logoColor=white&style=for-the-badge)](https://github.com/hcmok/palettelab)
+[![Open in Spaces](https://huggingface.co/datasets/huggingface/badges/resolve/main/open-in-hf-spaces-md-dark.svg)](https://huggingface.co/spaces/oako/palettelab)
+
 PaletteLab is a color palette generation tool. It is designed to support multimodal inputs, including text, images, and palettes. Currently, only text-to-palette generation is supported.
 
 ## Examples
@@ -15,7 +17,7 @@ PaletteLab is a color palette generation tool. It is designed to support multimo
 1. Clone the repository and navigate to the project directory:
 
 ```bash
-git clone https://github.com/oakto/palettelab
+git clone https://github.com/hcmok/palettelab
 cd palettelab
 ```
 
@@ -40,7 +42,7 @@ For other versions, see the [official installation guide](https://pytorch.org/ge
 
 ## Usage
 
-You can run locally on a notebook or a Gradio web interface. Download the model weights using the link above, or allow the script to download them automatically by default.
+You can run locally on a notebook or a Gradio web interface. Download the model weights manually [here](https://huggingface.co/oako/palettelab), or allow the script to download them automatically by default.
 
 #### Notebook
 
